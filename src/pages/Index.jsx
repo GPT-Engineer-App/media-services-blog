@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Flex, Heading, Text, VStack, Image, SimpleGrid, Button, useColorMode, IconButton, Stack } from "@chakra-ui/react";
-import { FaSun, FaMoon, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaSun, FaMoon, FaTwitter, FaFacebookF, FaInstagram, FaPlus } from "react-icons/fa";
 
 const ArticleCard = ({ title, excerpt, imageUrl }) => (
   <Box borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="sm" p={4} _hover={{ boxShadow: "md" }}>
@@ -23,6 +23,7 @@ const Index = () => {
   return (
     <Container maxW="container.xl" py={8}>
       <Flex justifyContent="space-between" alignItems="center" mb={8}>
+        <IconButton icon={<FaPlus />} colorScheme="purple" aria-label="Publish Article" variant="outline" mr={4} />
         <Heading as="h1" size="xl">
           Wilson Media Services
         </Heading>
