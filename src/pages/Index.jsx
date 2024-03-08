@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "../components/NavBar.jsx";
 import { Box, Container, Flex, Heading, Text, VStack, Image, SimpleGrid, Button, useColorMode, IconButton, Stack } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
@@ -18,8 +19,6 @@ const ArticleCard = ({ title, excerpt, imageUrl }) => (
 );
 
 const Index = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <Container maxW="container.xl" py={8}>
       <Flex justifyContent="space-between" alignItems="center" mb={8}>
