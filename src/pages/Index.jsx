@@ -22,9 +22,10 @@ const Index = () => {
 
   return (
     <Container maxW="container.xl" py={8}>
-      <Flex justifyContent="space-between" alignItems="center" mb={8}>
+      <Flex justifyContent="space-between" alignItems="center" mb={8} align="center">
+        <Image src="/logo.png" alt="Wilson Media Services Logo" boxSize="50px" mr={4} />
         <IconButton icon={<FaPlus />} colorScheme="purple" aria-label="Publish Article" variant="outline" mr={4} />
-        <Heading as="h1" size="xl">
+        <Heading as="h1" size="xl" ml={4}>
           Wilson Media Services
         </Heading>
         <IconButton icon={colorMode === "light" ? <FaMoon /> : <FaSun />} onClick={toggleColorMode} variant="ghost" />
